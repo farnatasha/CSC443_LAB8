@@ -8,7 +8,8 @@ if(!mysqli_query($conn, $sql)){
     echo "Failed to connect to MySQL: ";
     exit();
 }
-echo "1 record successfully added...";
+else {
+echo "1 record successfully added...";}
 
 mysqli_free_result($sql);
 mysqli_close($conn);
