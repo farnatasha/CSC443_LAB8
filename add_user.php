@@ -8,5 +8,6 @@ if(!mysqli_query($conn, $sql)){
     die('Error: '.mysqli_error());
 }
 echo "1 record successfully added...";
+mysqli_free_result($result);
 mysqli_close($conn);
 ?>
