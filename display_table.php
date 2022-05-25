@@ -13,6 +13,6 @@ while ($row = mysqli_fetch_row($result)) {
 }
 
 mysqli_free_result($result);
-mysqli_close($dbc);
+mysqli_close($conn);
 
 ?>
